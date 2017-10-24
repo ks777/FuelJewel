@@ -1,0 +1,193 @@
+code {
+	background: #9dd53a;
+	background: -mozlinear-gradient(left, #9dd53a 0%, #a1d54f 40%, #80c217 83%, $7cbc0a 100%);
+	background: -webkit-linear-gradient(left, #9dd53a 0%,#a1d54f 40%,#80c217 83%,#7cbc0a 100%);
+	background: linear-gradient(to right, #9dd53a 0%,#a1d54f 40%,#80c217 83%,#7cbc0a 100%);
+	color: #0073e6;
+	display: block;
+	font: 14px/24px "Verdana", Verdana;
+	padding: 24px 15px;
+	padding-bottom: 100px;
+	text-align: center;
+	font-weight: bold;
+	padding-left: 350px;
+	padding-right: 350px;
+}
+
+code2{
+	background: rgb(30,87,153); 
+	background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 51%, rgba(41,137,216,1) 67%, rgba(41,137,216,1) 67%, rgba(125,185,232,1) 100%); 
+	background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%); 
+	background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%);
+	color: #0073e6;
+	display: block;
+	font: 14px/24px "Verdana", Verdana;
+	padding-top: 100px;
+	padding-bottom: 112px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 1000px;
+	padding-right: 70px;
+}
+
+code3{
+	background: rgb(30,87,153); 
+	background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 51%, rgba(41,137,216,1) 67%, rgba(41,137,216,1) 67%, rgba(125,185,232,1) 100%); 
+	background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%); 
+	background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%);
+	color: #0073e6;
+	display: block;
+	font: 14px/24px "Verdana", Verdana;
+	padding-top:40px;
+	padding-bottom: 85px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 50px;
+	padding-right: 1000px;
+}
+
+code4{
+	background: rgb(30,87,153); 
+	background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 51%, rgba(41,137,216,1) 67%, rgba(41,137,216,1) 67%, rgba(125,185,232,1) 100%); 
+	background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%); 
+	background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%);
+	color: #0073e6;
+	display: block;
+	font: 14px/24px "Verdana", Verdana;
+	padding-top: 40px;
+	padding-bottom: 59px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 1000px;
+	padding-right: 70px;
+}
+
+code5{
+	background: rgb(30,87,153); 
+	background: -moz-linear-gradient(left, rgba(30,87,153,1) 0%, rgba(32,124,202,1) 51%, rgba(41,137,216,1) 67%, rgba(41,137,216,1) 67%, rgba(125,185,232,1) 100%); 
+	background: -webkit-linear-gradient(left, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%); 
+	background: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(32,124,202,1) 51%,rgba(41,137,216,1) 67%,rgba(41,137,216,1) 67%,rgba(125,185,232,1) 100%);
+	color: #0073e6;
+	display: block;
+	font: 14px/24px "Verdana", Verdana;
+	padding-top:29px;
+	padding-bottom: 45px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 50px;
+	padding-right: 1000px;
+}
+
+
+h1{
+	font-size: 250%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	line-height: 100%;
+}
+
+h2{
+	margin-top:-55px;
+}
+
+h3{
+	font-size: 250%;
+	padding-top: 50px;
+	line-height: 100%;
+}
+
+h4{
+	margin-top: -65px;
+	padding-bottom: 9px;
+	margin-bottom: 15px;
+}
+
+h5{
+	margin-top:-55px;
+	padding-bottom: 18px;
+	margin-bottom: 20px;
+}
+
+
+section2{
+	float: left;
+	width: 100%;
+	display: block;
+}
+section3{
+	float: right;
+	width: 100%;
+	display: block;
+}
+
+section4{
+	float: right;
+	width: 100%;
+	display: block;
+}
+
+footer {
+  margin-bottom: 0;
+  clear: both;
+  opacity: 0.8;
+ 
+}
+
+html{
+	background-image: url("wallpaperwebsite.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+div{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div2{
+	float: right;
+	width: 50%;
+	display: block;
+}
+
+div3{
+	float: left;
+	width: 50%;
+	display: block;
+}
+
+div10{
+	align: left;
+	position: relative;
+	top: 190px;
+	left: 280px;
+}
+
+div11{
+	position: relative;
+	bottom: 40px;
+	padding-right: 100px;
+	left: 250px;
+
+}
+
+img,
+html{
+	padding: 0;
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+audio{
+	display:none;
+}
+
+}
