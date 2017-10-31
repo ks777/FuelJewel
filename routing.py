@@ -1,7 +1,19 @@
+#note to self: it works, so we just need to recreate the conditions and apply it once one
+#note to self 2: dont utilize the api yet. work with an initial base value and once that works, work on the website and then apply the api from there.
+#how to set up the page:
+#1. Intro page to set up user preference (so car make/model/year)
+#2. Page to display result
+
+
+
 from flask import Flask, url_for, request, render_template
 from app import app
 import quandl
 import math
+import requests
+
+resp = requests.get("http://www.fueleconomy.gov/feg/ws/rest/fuelprices")
+print(resp)
 
 #def cashback(x):
   #  z = x * .03
@@ -9,10 +21,12 @@ import math
   #  print(x)
 
 
+
 #first page/where we collect data from the user
-@app.route('/')
-def itstime():
-    return render_template('SENDINTHEFINISHER.html')
+#@app.route('/')
+#def itstime():
+#    return render_template('SENDINTHEFINISHER.html')
+
 
 #second page where we display outputs to the user
 #@app.route('/Had this idea for a while, but wanted to give it a shot today!', methods = ['GET','POST'])
