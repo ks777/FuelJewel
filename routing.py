@@ -10,7 +10,7 @@ import math
 import untangle
 
 response = untangle.parse("http://www.fueleconomy.gov/ws/rest/fuelprices")
-print(response.fuelPrices.regular.cdata)
+x = float(response.fuelPrices.regular.cdata)
 
 #Credit card gives 3% cashback for gas purchases.
 def cashback(x):
@@ -31,15 +31,21 @@ def itsover():
     #space reserved for calling the database. Most of the work comes here
     #vehicle will be the mock variable called to reference the database output
     #assuming you can even get the value. for now, put a placement value
-        gas2 = response + [.05]   #low point credit card
-        gas3 = response + .10  #high point credit card
-        cash = response * 16 #16 is the combined mpg of the 2002 trailblazer 4WD
+        gas2 = x + .05   #low point credit card
+        print(gas2)
+        gas3 = x + .10  #high point credit card
+        print(gas3)
+        cash = x * 16 #16 is the combined mpg of the 2002 trailblazer 4WD
+        print(cash)
         credit_low = gas2 * 16
-        credit_high = gas3 * 16
+        print(credit_low)
+        #credit_high = gas3 * 16
+        #print(credit_high)
         saving_low = cashback(credit_low)
-        saving_high = cashback(credit_high)
+        #saving_high = cashback(credit_high)
         print(saving_low)
-        print(saving_high)
+        #print(saving_high)
+        
         #would need to add car model when database is finished
         #if credit_high > cash:
           #  int returned = credit_high - cash
