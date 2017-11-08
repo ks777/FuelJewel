@@ -17,18 +17,23 @@ def cashback(x):
 #which appears to be a .06 credit increase
 
 cgas = input("Enter the price, in decimal form, of purchasing gas via credit card: ")
+cgas = float(cgas)
 pgas = input("Enter the percentage of gas you need to fill your tank: ")
+pgas_final = float(pgas)/100
 
 #gas2 = x + .06   #low point credit card
 #print("Cost of gas using credit card, at its lowest price: $",gas2)
 #gas3 = x + .10  #high point credit card/normal cost
 #print("Cost of gas using credit card, at its highest price: $",gas3)
 
-cash = x * 16 #16 is the combined mpg of the 2002 trailblazer 4WD
+
+#16 is the combined mpg of the 2002 trailblazer 4WD
+cash = x * 16 * pgas_final
+cash = round(cash)
 print("This is the amount you would pay for a full tank, in cash: $",cash)
-credit_low = gas2 * 16
+credit_low = cgas * 16 * pgas_final
 print("This is the amount you would pay for a full tank, in the lowest price in credit card:$",credit_low)
-credit_high = gas3 * 16
+credit_high = cgas * 16 * pgas_final
 print("This is the amount you would pay for a full tank, in the highest price in credit card:$",credit_high)
 saving_low = cashback(credit_low)
 saving_high = cashback(credit_high)
@@ -37,19 +42,19 @@ print("This is the end result of the highest credit spending, assuming cashback:
 if cash > saving_low:
    savings = cash - saving_low
    savings = round(savings,2)
-   print("You save more with cash! How much more? Well you save: $",savings)
+   print("You save more with your credit card! How much more? Well you save: $",savings)
 elif cash > saving_high:
    savings = cash - saving_high
    savings = round(savings,2)
-   print("You save more by using cash at this price. You save: $", savings)
+   print("You save more by using credit card at this price. You save: $", savings)
 elif saving_high > cash:
    savings = saving_high - cash
    savings = round(savings,2)
-   print("You save more by using your credit card at this price. You save: $", savings)
+   print("You save more by using your cash at this price. You save: $", savings)
 elif saving_low > cash:
    savings = saving_low - cash
    savings = round(savings,2)
-   print("You save more by using your credit card at this price. You save: $", savings)
+   print("You save more by using your cash at this price. You save: $", savings)
 else:
    print("DO WHATEVER, ITS THE SAME PRICE REALLY!")
 
