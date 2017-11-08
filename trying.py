@@ -29,28 +29,16 @@ pgas_final = float(pgas)/100
 
 #16 is the combined mpg of the 2002 trailblazer 4WD
 cash = x * 16 * pgas_final
-cash = round(cash)
+cash = round(cash,2)
 print("This is the amount you would pay for a full tank, in cash: $",cash)
 credit_low = cgas * 16 * pgas_final
 print("This is the amount you would pay for a full tank, in the lowest price in credit card:$",credit_low)
-credit_high = cgas * 16 * pgas_final
-print("This is the amount you would pay for a full tank, in the highest price in credit card:$",credit_high)
 saving_low = cashback(credit_low)
-saving_high = cashback(credit_high)
 print("This is the end result of the lowest credit spending, assuming cashback: $",saving_low)       #total i spend on a full tank of gas using credit minus the $3 cashback
-print("This is the end result of the highest credit spending, assuming cashback: $",saving_high)
 if cash > saving_low:
    savings = cash - saving_low
    savings = round(savings,2)
    print("You save more with your credit card! How much more? Well you save: $",savings)
-elif cash > saving_high:
-   savings = cash - saving_high
-   savings = round(savings,2)
-   print("You save more by using credit card at this price. You save: $", savings)
-elif saving_high > cash:
-   savings = saving_high - cash
-   savings = round(savings,2)
-   print("You save more by using your cash at this price. You save: $", savings)
 elif saving_low > cash:
    savings = saving_low - cash
    savings = round(savings,2)
@@ -60,11 +48,19 @@ else:
 
 
 #MAIN QUESTION: DOES MY CAULCATION CHANGE IF I DON`T SPEND A FULL TANK?
-#LIKE 75%/50%/25%
-#it does not. reducing it all equals the same answer.
 #the only thing that can change would be the credit value
 #so if you do % change and credit increase change, then the values would matter a lot.
    #so: variable to initial credit value  and percentage change
    #so then you only need 2 values.
+
+#-----------------------------------------------------------------------
+#Right now, i need to find a better API for credit and cash gas price.
+#Unless i assume the lowesy credit card is 5-6 cents lower than the cost of the gas
+
+#so we still need to figure out an api for vehicles and combined mpg access as well
+#otherwise, we create our own database, with mongodb usage
+#also look up mobile usage
+
+
 
 
