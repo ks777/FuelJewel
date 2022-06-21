@@ -12,7 +12,7 @@ json-encoder==0.4.4
 MarkupSafe==1.0
 more-itertools==3.2.0
 multidict==3.3.0
-numpy==1.13.3
+numpy==1.22.0
 pandas==0.21.0
 python-dateutil==2.6.1
 python-status==1.0.1
