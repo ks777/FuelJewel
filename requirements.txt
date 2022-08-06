@@ -22,7 +22,7 @@ requests==2.17.3
 simple-rest-client==0.3.0
 singledispatch==3.4.0.3
 six==1.11.0
-untangle==1.1.1
+untangle==1.2.1
 urllib3==1.21.1
 Werkzeug==0.12.2
 yarl==0.13.0
